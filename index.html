@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">FootWars – Coming Soon</title>
+  <meta name="description" data-i18n-content="meta.description" content="FootWars: turn-based 2D football artillery battles. Aim, power, wind. Destroy the pitch, score goals. Coming soon to Android, iOS and Web.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://footwarsgame.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://footwarsgame.com/">
+  <meta property="og:title" data-i18n-content="meta.title" content="FootWars – Coming Soon">
+  <meta property="og:description" data-i18n-content="meta.description" content="Turn-based 2D football artillery battles. Coming soon to Android, iOS and Web.">
+  <meta property="og:site_name" content="FootWars">
+  <meta name="twitter:card" content="summary">
+  <link rel="alternate" hreflang="tr" href="https://footwarsgame.com/?lang=tr">
+  <link rel="alternate" hreflang="en" href="https://footwarsgame.com/?lang=en">
+  <link rel="alternate" hreflang="de" href="https://footwarsgame.com/?lang=de">
+  <link rel="alternate" hreflang="es" href="https://footwarsgame.com/?lang=es">
+  <link rel="alternate" hreflang="pt" href="https://footwarsgame.com/?lang=pt">
+  <link rel="alternate" hreflang="fr" href="https://footwarsgame.com/?lang=fr">
+  <link rel="alternate" hreflang="ru" href="https://footwarsgame.com/?lang=ru">
+  <link rel="alternate" hreflang="id" href="https://footwarsgame.com/?lang=id">
+  <link rel="alternate" hreflang="vi" href="https://footwarsgame.com/?lang=vi">
+  <link rel="alternate" hreflang="x-default" href="https://footwarsgame.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="pitch" aria-hidden="true">
+    <div class="pitch-line pitch-line--center"></div>
+    <div class="pitch-circle"></div>
+    <div class="pitch-box pitch-box--left"></div>
+    <div class="pitch-box pitch-box--right"></div>
+  </div>
+
+  <header class="top">
+    <a class="brand" href="/">
+      <svg class="brand-ball" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#f8fafc"/>
+        <polygon points="32,14 46,24 41,41 23,41 18,24" fill="#0b1220"/>
+        <path d="M32 14 L32 4 M46 24 L56 20 M41 41 L47 52 M23 41 L17 52 M18 24 L8 20" stroke="#0b1220" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span>FootWars</span>
+    </a>
+    <label class="lang">
+      <span class="sr-only" data-i18n="lang.label">Language</span>
+      <select id="lang" aria-label="Language">
+        <option value="tr">Türkçe</option>
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="pt">Português</option>
+        <option value="fr">Français</option>
+        <option value="ru">Русский</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="vi">Tiếng Việt</option>
+      </select>
+    </label>
+  </header>
+
+  <main class="hero">
+    <p class="eyebrow" data-i18n="hero.eyebrow">Turn-based football artillery</p>
+    <h1 class="title">
+      <span class="title-word">Foot</span><span class="title-word title-word--accent">Wars</span>
+    </h1>
+    <p class="soon" data-i18n="hero.soon">Coming soon</p>
+    <p class="lead" data-i18n="hero.lead">Aim. Charge. Fire. Read the wind, blast the pitch and score against your rival's goal – or knock them off the map.</p>
+
+    <ul class="features">
+      <li>
+        <span class="feature-icon">🎯</span>
+        <strong data-i18n="features.aim.title">Angle &amp; power</strong>
+        <span data-i18n="features.aim.text">Classic artillery controls. Every shot is yours to calculate.</span>
+      </li>
+      <li>
+        <span class="feature-icon">💥</span>
+        <strong data-i18n="features.terrain.title">Destructible pitch</strong>
+        <span data-i18n="features.terrain.text">Every shot carves a crater. No ground left? You fall.</span>
+      </li>
+      <li>
+        <span class="feature-icon">🥅</span>
+        <strong data-i18n="features.goal.title">Two ways to win</strong>
+        <span data-i18n="features.goal.text">Drain your rival's HP or score three goals. Your call each turn.</span>
+      </li>
+      <li>
+        <span class="feature-icon">⚔️</span>
+        <strong data-i18n="features.modes.title">PvP &amp; PvE</strong>
+        <span data-i18n="features.modes.text">Duel real players or level up against bots. Unlock wind, skills and more.</span>
+      </li>
+    </ul>
+
+    <div class="platforms" aria-label="Platforms">
+      <span class="chip" data-i18n="platforms.android">Android</span>
+      <span class="chip" data-i18n="platforms.ios">iOS</span>
+      <span class="chip" data-i18n="platforms.web">Web browser</span>
+      <span class="chip chip--free" data-i18n="platforms.free">Free to play</span>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <span>© <span id="year">2026</span> FootWars. <span data-i18n="footer.rights">All rights reserved.</span></span>
+    <span class="dot">•</span>
+    <span>footwarsgame.com</span>
+  </footer>
+
+  <div class="ball ball--float" aria-hidden="true">
+    <svg viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="30" fill="#f8fafc"/>
+      <polygon points="32,14 46,24 41,41 23,41 18,24" fill="#0b1220"/>
+      <path d="M32 14 L32 4 M46 24 L56 20 M41 41 L47 52 M23 41 L17 52 M18 24 L8 20" stroke="#0b1220" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
