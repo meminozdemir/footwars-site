@@ -4,8 +4,9 @@ FootWars oyununun tanıtım sitesi. Şu an çok dilli "çok yakında" sayfası.
 
 - **Canlı:** https://footwarsgame.com
 - **Oyun reposu:** ayrı repo (`footwars`, Godot 4)
-- **Barındırma:** Vercel (bu repoya bağlı, `main` dalına her push otomatik yayınlanır)
-- **DNS:** Cloudflare
+- **Barındırma:** Vercel, proje adı `footwars-site` (hobby takımı). İlk deploy API üzerinden yapıldı.
+- **Otomatik yayın:** Vercel dashboard → footwars-site → Settings → Git → "Connect Git Repository" ile bu repo bağlanınca `main` dalına her push otomatik yayınlanır.
+- **DNS:** Cloudflare, proxy kapalı (A @ → 76.76.21.21, CNAME www → cname.vercel-dns.com). www → apex 308 yönlendirme Vercel tarafında.
 
 ## Yapı
 
