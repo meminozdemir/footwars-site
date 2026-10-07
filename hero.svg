@@ -1,183 +1,372 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="FootWars gameplay scene">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="FootWars gameplay scene">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#07101f"/>
-      <stop offset="0.55" stop-color="#0f1f3a"/>
-      <stop offset="1" stop-color="#16304f"/>
+      <stop offset="0" stop-color="#050b17"/>
+      <stop offset="0.6" stop-color="#0d1b33"/>
+      <stop offset="1" stop-color="#14304f"/>
     </linearGradient>
     <linearGradient id="dirt" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#7a4a22"/>
-      <stop offset="1" stop-color="#3b2412"/>
+      <stop offset="0" stop-color="#8a5a2b"/>
+      <stop offset="0.25" stop-color="#6b4423"/>
+      <stop offset="1" stop-color="#2e1a0c"/>
     </linearGradient>
-    <radialGradient id="glowL" cx="0.5" cy="0" r="0.8">
-      <stop offset="0" stop-color="#fef3c7" stop-opacity="0.55"/>
+    <linearGradient id="grassG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#86efac"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0" r="0.8">
+      <stop offset="0" stop-color="#fef3c7" stop-opacity="0.5"/>
       <stop offset="1" stop-color="#fef3c7" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="boom" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#fff7cc"/>
-      <stop offset="0.35" stop-color="#fbbf24"/>
-      <stop offset="0.7" stop-color="#f97316" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+      <stop offset="0" stop-color="#fffbeb"/>
+      <stop offset="0.3" stop-color="#fbbf24"/>
+      <stop offset="0.65" stop-color="#f97316" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ef4444" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="net" width="10" height="10" patternUnits="userSpaceOnUse">
-      <path d="M0 0H10M0 0V10" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1"/>
+    <radialGradient id="gemGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e293b" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#0f172a" stop-opacity="0.92"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <pattern id="net" width="9" height="9" patternUnits="userSpaceOnUse">
+      <path d="M0 0H9M0 0V9" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1"/>
     </pattern>
-    <clipPath id="frame"><rect width="1200" height="520" rx="28"/></clipPath>
-    <path id="arc" d="M330 300 C 470 40, 720 40, 905 345" fill="none"/>
+    <pattern id="crowd" width="22" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="6" r="3.2" fill="#2b4a7a"/>
+      <circle cx="16" cy="18" r="3.2" fill="#1f3a63"/>
+    </pattern>
+    <pattern id="dirtTex" width="40" height="18" patternUnits="userSpaceOnUse">
+      <ellipse cx="10" cy="8" rx="6" ry="2.4" fill="#000" fill-opacity="0.12"/>
+      <ellipse cx="30" cy="14" rx="5" ry="2" fill="#000" fill-opacity="0.1"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="560" rx="28"/></clipPath>
+    <path id="arc" d="M262 372 C 420 70, 700 60, 872 384" fill="none"/>
+
+    <!-- chibi futbolcu: ayaklar (0,0) noktasında -->
+    <g id="chibi-body">
+      <!-- gölge -->
+      <ellipse cx="0" cy="3" rx="26" ry="5" fill="#000" fill-opacity="0.35"/>
+      <!-- bacaklar -->
+      <rect x="-15" y="-26" width="11" height="22" rx="4" fill="#f1c27d"/>
+      <rect x="4" y="-26" width="11" height="22" rx="4" fill="#f1c27d"/>
+      <!-- çoraplar -->
+      <rect x="-15" y="-16" width="11" height="10" rx="3" fill="#ffffff"/>
+      <rect x="4" y="-16" width="11" height="10" rx="3" fill="#ffffff"/>
+      <!-- kramponlar -->
+      <g>
+        <path d="M-20 -8 h19 a5 5 0 0 1 5 5 v3 h-27 v-3 a3 3 0 0 1 3 -5z" fill="#f97316"/>
+        <rect x="-18" y="-6" width="12" height="2.2" fill="#ffffff" fill-opacity="0.9"/>
+        <circle cx="-14" cy="1.5" r="1.4" fill="#111827"/><circle cx="-8" cy="1.5" r="1.4" fill="#111827"/><circle cx="-2" cy="1.5" r="1.4" fill="#111827"/>
+      </g>
+      <g>
+        <path d="M0 -8 h19 a5 5 0 0 1 5 5 v3 h-27 v-3 a3 3 0 0 1 3 -5z" fill="#f97316"/>
+        <rect x="2" y="-6" width="12" height="2.2" fill="#ffffff" fill-opacity="0.9"/>
+        <circle cx="6" cy="1.5" r="1.4" fill="#111827"/><circle cx="12" cy="1.5" r="1.4" fill="#111827"/><circle cx="18" cy="1.5" r="1.4" fill="#111827"/>
+      </g>
+    </g>
   </defs>
 
   <g clip-path="url(#frame)">
-    <!-- gökyüzü -->
-    <rect width="1200" height="520" fill="url(#sky)"/>
+    <!-- gökyüzü ve yıldızlar -->
+    <rect width="1200" height="560" fill="url(#sky)"/>
+    <g fill="#ffffff" opacity="0.7">
+      <circle cx="90" cy="60" r="1.6"/><circle cx="240" cy="110" r="1.2"/><circle cx="410" cy="40" r="1.4"/><circle cx="560" cy="90" r="1.1"/>
+      <circle cx="760" cy="50" r="1.5"/><circle cx="900" cy="120" r="1.2"/><circle cx="1080" cy="70" r="1.6"/><circle cx="1150" cy="150" r="1.1"/>
+      <circle cx="330" cy="160" r="1"/><circle cx="660" cy="150" r="1.3"/><circle cx="980" cy="30" r="1"/>
+    </g>
 
-    <!-- tribün silueti -->
-    <g fill="#0b1830">
-      <path d="M0 250 L0 340 L1200 340 L1200 250 Z"/>
-    </g>
-    <g fill="#132547">
-      <rect x="0" y="262" width="1200" height="12"/>
-      <rect x="0" y="286" width="1200" height="12"/>
-      <rect x="0" y="310" width="1200" height="12"/>
-    </g>
-    <g fill="#1e3a66" opacity="0.6">
-      <g id="crowd">
-        <circle cx="12" cy="258" r="4"/><circle cx="28" cy="258" r="4"/><circle cx="44" cy="258" r="4"/><circle cx="60" cy="258" r="4"/>
-        <circle cx="20" cy="282" r="4"/><circle cx="36" cy="282" r="4"/><circle cx="52" cy="282" r="4"/>
-        <circle cx="12" cy="306" r="4"/><circle cx="28" cy="306" r="4"/><circle cx="44" cy="306" r="4"/><circle cx="60" cy="306" r="4"/>
-      </g>
-      <use href="#crowd" x="72"/><use href="#crowd" x="144"/><use href="#crowd" x="216"/><use href="#crowd" x="288"/>
-      <use href="#crowd" x="360"/><use href="#crowd" x="432"/><use href="#crowd" x="504"/><use href="#crowd" x="576"/>
-      <use href="#crowd" x="648"/><use href="#crowd" x="720"/><use href="#crowd" x="792"/><use href="#crowd" x="864"/>
-      <use href="#crowd" x="936"/><use href="#crowd" x="1008"/><use href="#crowd" x="1080"/><use href="#crowd" x="1152"/>
-    </g>
+    <!-- tribün -->
+    <path d="M0 236 L1200 236 L1200 330 L0 330 Z" fill="#0a1526"/>
+    <rect x="0" y="240" width="1200" height="86" fill="url(#crowd)" opacity="0.9"/>
+    <g fill="#122238"><rect x="0" y="262" width="1200" height="6"/><rect x="0" y="288" width="1200" height="6"/><rect x="0" y="314" width="1200" height="6"/></g>
+    <!-- reklam panosu -->
+    <rect x="0" y="330" width="1200" height="22" fill="#111c33"/>
+    <g fill="#1d2d4d"><rect x="40" y="334" width="150" height="14" rx="2"/><rect x="230" y="334" width="150" height="14" rx="2"/><rect x="420" y="334" width="150" height="14" rx="2"/><rect x="630" y="334" width="150" height="14" rx="2"/><rect x="820" y="334" width="150" height="14" rx="2"/><rect x="1010" y="334" width="150" height="14" rx="2"/></g>
 
     <!-- projektörler -->
-    <g>
-      <path d="M150 0 L60 250 L300 250 Z" fill="url(#glowL)"/>
-      <path d="M1050 0 L900 250 L1140 250 Z" fill="url(#glowL)"/>
-      <rect x="146" y="0" width="8" height="250" fill="#1f2d4a"/>
-      <rect x="1046" y="0" width="8" height="250" fill="#1f2d4a"/>
-      <rect x="120" y="4" width="60" height="18" rx="4" fill="#cbd5e1"/>
-      <rect x="1020" y="4" width="60" height="18" rx="4" fill="#cbd5e1"/>
-    </g>
-
-    <!-- rüzgar -->
-    <g transform="translate(600 56)" fill="none" stroke="#e2e8f0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
-      <path d="M-70 0 H40"/>
-      <path d="M22 -14 L40 0 L22 14"/>
-      <path d="M-70 -22 H10" opacity="0.5"/>
-      <path d="M-70 22 H10" opacity="0.5"/>
-    </g>
+    <path d="M170 0 L70 240 L290 240 Z" fill="url(#glow)"/>
+    <path d="M1030 0 L910 240 L1150 240 Z" fill="url(#glow)"/>
+    <rect x="166" y="0" width="8" height="240" fill="#1f2d4a"/>
+    <rect x="1026" y="0" width="8" height="240" fill="#1f2d4a"/>
+    <rect x="138" y="2" width="64" height="16" rx="4" fill="#cbd5e1"/>
+    <rect x="998" y="2" width="64" height="16" rx="4" fill="#cbd5e1"/>
 
     <!-- zemin -->
-    <path d="M0 400 L120 400 L200 395 L300 372 L400 352 L500 330 L600 318 L700 330 L780 350 L830 372 L852 380 Q 880 430 912 380 L940 378 L1000 392 L1100 400 L1200 400 L1200 520 L0 520 Z" fill="url(#dirt)"/>
-    <!-- çim -->
-    <path d="M0 400 L120 400 L200 395 L300 372 L400 352 L500 330 L600 318 L700 330 L780 350 L830 372 L852 380" fill="none" stroke="#4ade80" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M912 380 L940 378 L1000 392 L1100 400 L1200 400" fill="none" stroke="#4ade80" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- krater içi -->
-    <path d="M852 380 Q 880 430 912 380" fill="none" stroke="#2a1a0c" stroke-width="10" stroke-linecap="round"/>
-    <!-- toprak parçaları -->
-    <g fill="#8a5a2b">
-      <circle cx="845" cy="340" r="5"/><circle cx="925" cy="332" r="4"/><circle cx="880" cy="318" r="3.5"/><circle cx="905" cy="352" r="3"/>
+    <path id="ground" d="M0 420 L170 420 L240 406 L300 384 L360 352 L400 334 L418 326 Q 436 350 454 322 L520 300 L600 290 L680 300 L740 318 L800 350 L846 378 Q 874 440 902 380 L960 392 L1030 414 L1200 420 L1200 560 L0 560 Z" fill="url(#dirt)"/>
+    <path d="M0 420 L170 420 L240 406 L300 384 L360 352 L400 334 L418 326 Q 436 350 454 322 L520 300 L600 290 L680 300 L740 318 L800 350 L846 378 Q 874 440 902 380 L960 392 L1030 414 L1200 420 L1200 560 L0 560 Z" fill="url(#dirtTex)"/>
+    <!-- çim: kraterler hariç -->
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 420 L170 420 L240 406 L300 384 L360 352 L400 334 L418 326" stroke="#166534" stroke-width="16"/>
+      <path d="M454 322 L520 300 L600 290 L680 300 L740 318 L800 350 L846 378" stroke="#166534" stroke-width="16"/>
+      <path d="M902 380 L960 392 L1030 414 L1200 420" stroke="#166534" stroke-width="16"/>
+      <path d="M0 420 L170 420 L240 406 L300 384 L360 352 L400 334 L418 326" stroke="url(#grassG)" stroke-width="10"/>
+      <path d="M454 322 L520 300 L600 290 L680 300 L740 318 L800 350 L846 378" stroke="url(#grassG)" stroke-width="10"/>
+      <path d="M902 380 L960 392 L1030 414 L1200 420" stroke="url(#grassG)" stroke-width="10"/>
+      <!-- krater iç kenarları -->
+      <path d="M418 326 Q 436 350 454 322" stroke="#1f1208" stroke-width="7"/>
+      <path d="M846 378 Q 874 440 902 380" stroke="#1f1208" stroke-width="9"/>
+    </g>
+    <!-- saha çizgileri -->
+    <g stroke="#ffffff" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round">
+      <path d="M600 290 V 282"/>
+      <path d="M598 305 a 14 14 0 1 0 4 0" fill="none" stroke-opacity="0.25"/>
     </g>
 
     <!-- sol kale -->
-    <g transform="translate(60 400)">
-      <rect x="0" y="-130" width="70" height="130" fill="url(#net)"/>
-      <path d="M0 0 V-130 H70" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M70 -130 V-112" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+    <g transform="translate(40 420)">
+      <rect x="0" y="-104" width="64" height="104" fill="url(#net)"/>
+      <path d="M0 0 V-104 H64" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M64 -104 V-90" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
     </g>
     <!-- sağ kale -->
-    <g transform="translate(1140 400) scale(-1 1)">
-      <rect x="0" y="-130" width="70" height="130" fill="url(#net)"/>
-      <path d="M0 0 V-130 H70" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M70 -130 V-112" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+    <g transform="translate(1160 420) scale(-1 1)">
+      <rect x="0" y="-104" width="64" height="104" fill="url(#net)"/>
+      <path d="M0 0 V-104 H64" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M64 -104 V-90" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- ödül sandığı (tepe) -->
+    <g transform="translate(600 290)">
+      <circle cx="0" cy="-22" r="46" fill="url(#gemGlow)">
+        <animate attributeName="r" values="40;52;40" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <ellipse cx="0" cy="2" rx="22" ry="4" fill="#000" fill-opacity="0.35"/>
+      <rect x="-20" y="-24" width="40" height="24" rx="4" fill="#7c4a1e"/>
+      <rect x="-22" y="-34" width="44" height="14" rx="4" fill="#9a5f2a"/>
+      <rect x="-22" y="-23" width="44" height="3" fill="#fbbf24"/>
+      <rect x="-4" y="-25" width="8" height="8" rx="1.5" fill="#fbbf24"/>
+      <!-- mücevher -->
+      <g transform="translate(0 -46)">
+        <polygon points="0,-12 10,-3 6,10 -6,10 -10,-3" fill="#a78bfa"/>
+        <polygon points="0,-12 10,-3 0,-1 -10,-3" fill="#c4b5fd"/>
+        <polygon points="-6,10 0,-1 6,10" fill="#7c3aed"/>
+        <animateTransform attributeName="transform" type="translate" values="0 -46;0 -54;0 -46" dur="2.2s" repeatCount="indefinite"/>
+      </g>
     </g>
 
     <!-- yörünge -->
-    <use href="#arc" stroke="#ffffff" stroke-opacity="0.55" stroke-width="4" stroke-dasharray="2 16" stroke-linecap="round"/>
+    <use href="#arc" stroke="#ffffff" stroke-opacity="0.5" stroke-width="3.5" stroke-dasharray="1 14" stroke-linecap="round"/>
 
-    <!-- mavi oyuncu (şut) -->
-    <g transform="translate(300 372)">
-      <!-- can barı -->
-      <rect x="-40" y="-120" width="80" height="9" rx="4" fill="#000" fill-opacity="0.6"/>
-      <rect x="-40" y="-120" width="66" height="9" rx="4" fill="#22c55e"/>
-      <!-- gölge -->
-      <ellipse cx="0" cy="2" rx="30" ry="6" fill="#000" fill-opacity="0.35"/>
-      <!-- bacaklar -->
-      <rect x="-20" y="-40" width="14" height="40" rx="5" fill="#f1c27d"/>
-      <rect x="4" y="-44" width="14" height="30" rx="5" fill="#f1c27d" transform="rotate(-50 11 -44)"/>
-      <!-- kramponlar -->
-      <rect x="-24" y="-6" width="22" height="8" rx="3" fill="#111827"/>
-      <rect x="24" y="-66" width="22" height="8" rx="3" fill="#111827" transform="rotate(-50 35 -62)"/>
+    <!-- MAVİ OYUNCU (şut) -->
+    <g transform="translate(236 407) scale(0.78)">
+      <!-- isim/can -->
+      <g transform="translate(0 -126)">
+        <rect x="-36" y="0" width="72" height="8" rx="4" fill="#000" fill-opacity="0.6"/>
+        <rect x="-36" y="0" width="60" height="8" rx="4" fill="#22c55e"/>
+      </g>
+      <!-- bacaklar + kramponlar (sağ bacak şut pozunda) -->
+      <ellipse cx="0" cy="3" rx="26" ry="5" fill="#000" fill-opacity="0.35"/>
+      <rect x="-15" y="-26" width="11" height="22" rx="4" fill="#f1c27d"/>
+      <rect x="-15" y="-16" width="11" height="10" rx="3" fill="#ffffff"/>
+      <g>
+        <path d="M-20 -8 h19 a5 5 0 0 1 5 5 v3 h-27 v-3 a3 3 0 0 1 3 -5z" fill="#f97316"/>
+        <rect x="-18" y="-6" width="12" height="2.2" fill="#ffffff" fill-opacity="0.9"/>
+        <circle cx="-14" cy="1.5" r="1.4" fill="#111827"/><circle cx="-8" cy="1.5" r="1.4" fill="#111827"/><circle cx="-2" cy="1.5" r="1.4" fill="#111827"/>
+      </g>
+      <g transform="translate(8 -24) rotate(-55)">
+        <rect x="-4" y="0" width="11" height="22" rx="4" fill="#f1c27d"/>
+        <rect x="-4" y="10" width="11" height="10" rx="3" fill="#ffffff"/>
+        <path d="M-9 18 h19 a5 5 0 0 1 5 5 v3 h-27 v-3 a3 3 0 0 1 3 -5z" fill="#f97316"/>
+        <rect x="-7" y="20" width="12" height="2.2" fill="#ffffff" fill-opacity="0.9"/>
+        <circle cx="-3" cy="27.5" r="1.4" fill="#111827"/><circle cx="3" cy="27.5" r="1.4" fill="#111827"/><circle cx="9" cy="27.5" r="1.4" fill="#111827"/>
+      </g>
       <!-- şort -->
-      <rect x="-22" y="-56" width="44" height="20" rx="4" fill="#1e3a8a"/>
+      <rect x="-18" y="-38" width="36" height="16" rx="4" fill="#1e3a8a"/>
       <!-- forma -->
-      <rect x="-24" y="-104" width="48" height="52" rx="8" fill="#3b82f6"/>
-      <circle cx="0" cy="-78" r="8" fill="#93c5fd"/>
+      <rect x="-21" y="-70" width="42" height="36" rx="8" fill="#3b82f6"/>
+      <rect x="-21" y="-70" width="8" height="36" rx="4" fill="#ffffff" fill-opacity="0.25"/>
+      <text x="0" y="-45" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="15" fill="#ffffff">10</text>
       <!-- kollar -->
-      <rect x="-46" y="-100" width="14" height="40" rx="6" fill="#3b82f6" transform="rotate(30 -39 -100)"/>
-      <rect x="32" y="-100" width="14" height="40" rx="6" fill="#3b82f6" transform="rotate(-40 39 -100)"/>
-      <!-- kafa -->
-      <circle cx="0" cy="-124" r="18" fill="#f1c27d"/>
-      <path d="M-18 -130 Q 0 -150 18 -130 Z" fill="#1f2937"/>
-      <circle cx="7" cy="-126" r="2.6" fill="#111827"/>
+      <rect x="-36" y="-66" width="11" height="26" rx="5" fill="#f1c27d" transform="rotate(35 -30 -66)"/>
+      <rect x="25" y="-66" width="11" height="26" rx="5" fill="#f1c27d" transform="rotate(-45 30 -66)"/>
+      <!-- kafa (büyük) -->
+      <circle cx="0" cy="-96" r="26" fill="#f1c27d"/>
+      <path d="M-26 -100 Q -14 -132 10 -124 Q 26 -118 26 -100 Q 14 -112 -4 -108 Q -18 -106 -26 -100 Z" fill="#1f2937"/>
+      <rect x="-27" y="-104" width="54" height="7" rx="3" fill="#fbbf24"/>
+      <circle cx="8" cy="-94" r="3.6" fill="#111827"/><circle cx="-6" cy="-94" r="3.6" fill="#111827"/>
+      <circle cx="9.2" cy="-95.4" r="1.2" fill="#ffffff"/><circle cx="-4.8" cy="-95.4" r="1.2" fill="#ffffff"/>
+      <path d="M-2 -84 q 6 5 12 0" stroke="#7c2d12" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- takı: küpe -->
+      <circle cx="-24" cy="-90" r="2.6" fill="#fde68a"/>
     </g>
 
-    <!-- açı ve güç göstergesi -->
-    <g transform="translate(330 300)" fill="none" stroke="#fbbf24" stroke-width="4" stroke-linecap="round">
-      <path d="M0 0 L70 -58" stroke-dasharray="8 8"/>
-      <path d="M40 0 A40 40 0 0 0 31 -24" opacity="0.8"/>
-    </g>
-    <g transform="translate(240 250)">
-      <rect x="0" y="0" width="120" height="12" rx="6" fill="#000" fill-opacity="0.6"/>
-      <rect x="0" y="0" width="88" height="12" rx="6" fill="#fbbf24"/>
+    <!-- açı ve güç göstergesi (mavi oyuncunun yanında) -->
+    <g transform="translate(262 372)">
+      <path d="M0 0 L66 -74" stroke="#fbbf24" stroke-width="3" stroke-dasharray="7 7" stroke-linecap="round"/>
+      <path d="M34 0 A34 34 0 0 0 21 -27" fill="none" stroke="#fbbf24" stroke-width="3" opacity="0.85"/>
+      <text x="44" y="-12" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="18" fill="#fde68a">62°</text>
     </g>
 
-    <!-- kırmızı oyuncu (geri sekiyor) -->
-    <g transform="translate(905 345) rotate(14)">
-      <rect x="-40" y="-128" width="80" height="9" rx="4" fill="#000" fill-opacity="0.6"/>
-      <rect x="-40" y="-128" width="26" height="9" rx="4" fill="#ef4444"/>
-      <rect x="-18" y="-40" width="14" height="40" rx="5" fill="#f1c27d" transform="rotate(20 -11 -40)"/>
-      <rect x="6" y="-40" width="14" height="40" rx="5" fill="#f1c27d" transform="rotate(-25 13 -40)"/>
-      <rect x="-24" y="-6" width="22" height="8" rx="3" fill="#111827" transform="rotate(20 -13 -2)"/>
-      <rect x="6" y="-6" width="22" height="8" rx="3" fill="#111827" transform="rotate(-25 17 -2)"/>
-      <rect x="-22" y="-56" width="44" height="20" rx="4" fill="#7f1d1d"/>
-      <rect x="-24" y="-104" width="48" height="52" rx="8" fill="#ef4444"/>
-      <circle cx="0" cy="-78" r="8" fill="#fecaca"/>
-      <rect x="-50" y="-104" width="14" height="40" rx="6" fill="#ef4444" transform="rotate(60 -43 -104)"/>
-      <rect x="36" y="-104" width="14" height="40" rx="6" fill="#ef4444" transform="rotate(-70 43 -104)"/>
-      <circle cx="0" cy="-124" r="18" fill="#f1c27d"/>
-      <path d="M-18 -130 Q 0 -150 18 -130 Z" fill="#7c2d12"/>
-      <path d="M-9 -126 L-3 -122 M-9 -122 L-3 -126" stroke="#111827" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- KIRMIZI OYUNCU (hasar almış, geri sekiyor) -->
+    <g transform="translate(922 392) rotate(18) scale(0.78)">
+      <g transform="translate(0 -126)">
+        <rect x="-36" y="0" width="72" height="8" rx="4" fill="#000" fill-opacity="0.6"/>
+        <rect x="-36" y="0" width="22" height="8" rx="4" fill="#ef4444"/>
+      </g>
+      <use href="#chibi-body"/>
+      <rect x="-18" y="-38" width="36" height="16" rx="4" fill="#7f1d1d"/>
+      <rect x="-21" y="-70" width="42" height="36" rx="8" fill="#ef4444"/>
+      <rect x="-21" y="-52" width="42" height="6" fill="#ffffff" fill-opacity="0.3"/>
+      <text x="0" y="-45" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="15" fill="#ffffff">7</text>
+      <rect x="-40" y="-70" width="11" height="26" rx="5" fill="#f1c27d" transform="rotate(70 -34 -70)"/>
+      <rect x="29" y="-70" width="11" height="26" rx="5" fill="#f1c27d" transform="rotate(-80 34 -70)"/>
+      <circle cx="0" cy="-96" r="26" fill="#f1c27d"/>
+      <path d="M-26 -98 Q -20 -130 4 -126 Q 28 -122 26 -98 Q 10 -114 -8 -108 Q -20 -104 -26 -98 Z" fill="#7c2d12"/>
+      <path d="M-12 -98 l 8 8 M-4 -98 l -8 8 M4 -98 l 8 8 M12 -98 l -8 8" stroke="#111827" stroke-width="2.4" stroke-linecap="round"/>
+      <ellipse cx="0" cy="-82" rx="5" ry="6" fill="#7c2d12"/>
+      <!-- takı: kolye -->
+      <path d="M-10 -72 q 10 10 20 0" stroke="#fde68a" stroke-width="2" fill="none"/>
+      <circle cx="0" cy="-66" r="3" fill="#a78bfa"/>
+    </g>
+
+    <!-- hasar sayısı -->
+    <g transform="translate(930 262)">
+      <text x="0" y="0" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="34" fill="#fde047" stroke="#7c2d12" stroke-width="2" paint-order="stroke">-412</text>
+      <animateTransform attributeName="transform" type="translate" values="930 270;930 232" dur="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.7;1" dur="1.6s" repeatCount="indefinite"/>
     </g>
 
     <!-- patlama -->
-    <g transform="translate(882 352)">
-      <circle r="70" fill="url(#boom)">
-        <animate attributeName="r" values="58;74;58" dur="1.6s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.95;0.7;0.95" dur="1.6s" repeatCount="indefinite"/>
+    <g transform="translate(872 384)">
+      <circle r="62" fill="url(#boom)">
+        <animate attributeName="r" values="40;72;40" dur="1.6s" repeatCount="indefinite"/>
       </circle>
-      <path d="M0 -62 L12 -22 L54 -34 L24 -4 L62 20 L20 18 L26 62 L0 28 L-26 62 L-20 18 L-62 20 L-24 -4 L-54 -34 L-12 -22 Z" fill="#fde68a" opacity="0.9">
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+      <circle r="62" fill="none" stroke="#fde68a" stroke-width="3">
+        <animate attributeName="r" values="20;90" dur="1.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M0 -52 L10 -18 L46 -28 L20 -3 L52 17 L17 15 L22 52 L0 24 L-22 52 L-17 15 L-52 17 L-20 -3 L-46 -28 L-10 -18 Z" fill="#fef3c7" opacity="0.95">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
       </path>
-      <circle r="16" fill="#fff7cc"/>
+      <!-- toprak parçaları -->
+      <g fill="#8a5a2b">
+        <circle r="4"><animateTransform attributeName="transform" type="translate" values="0 0;-60 -80" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.6s" repeatCount="indefinite"/></circle>
+        <circle r="3"><animateTransform attributeName="transform" type="translate" values="0 0;40 -95" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.6s" repeatCount="indefinite"/></circle>
+        <circle r="3.5"><animateTransform attributeName="transform" type="translate" values="0 0;80 -50" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.6s" repeatCount="indefinite"/></circle>
+        <circle r="2.5"><animateTransform attributeName="transform" type="translate" values="0 0;-30 -110" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.6s" repeatCount="indefinite"/></circle>
+        <circle r="3" fill="#4ade80"><animateTransform attributeName="transform" type="translate" values="0 0;-90 -40" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.6s" repeatCount="indefinite"/></circle>
+      </g>
     </g>
 
     <!-- top -->
     <g>
       <g>
-        <circle r="17" fill="#f8fafc"/>
-        <polygon points="0,-9 8,-3 5,7 -5,7 -8,-3" fill="#0b1220"/>
-        <path d="M0 -9 L0 -16 M8 -3 L15 -6 M5 7 L9 14 M-5 7 L-9 14 M-8 -3 L-15 -6" stroke="#0b1220" stroke-width="2.4" stroke-linecap="round" fill="none"/>
-        <animateTransform attributeName="transform" type="rotate" from="0" to="720" dur="2.4s" repeatCount="indefinite"/>
+        <circle r="13" fill="#f8fafc"/>
+        <polygon points="0,-7 6,-2 4,5 -4,5 -6,-2" fill="#0b1220"/>
+        <path d="M0 -7 L0 -12 M6 -2 L11 -4 M4 5 L7 10 M-4 5 L-7 10 M-6 -2 L-11 -4" stroke="#0b1220" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="720" dur="2.2s" repeatCount="indefinite"/>
       </g>
-      <animateMotion dur="2.4s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
-        <mpath href="#arc"/>
+      <animateMotion dur="2.2s" repeatCount="indefinite" calcMode="linear">
+        <mpath xlink:href="#arc"/>
       </animateMotion>
     </g>
 
-    <!-- çerçeve -->
-    <rect width="1200" height="520" rx="28" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2"/>
+    <!-- ========== HUD ========== -->
+    <!-- sol oyuncu paneli -->
+    <g transform="translate(18 16)">
+      <rect width="300" height="64" rx="14" fill="url(#panel)" stroke="#ffffff" stroke-opacity="0.1"/>
+      <circle cx="34" cy="32" r="22" fill="#3b82f6"/>
+      <circle cx="34" cy="26" r="11" fill="#f1c27d"/>
+      <path d="M23 24 q 11 -14 22 0" fill="#1f2937"/>
+      <rect x="66" y="14" width="220" height="14" rx="7" fill="#000" fill-opacity="0.6"/>
+      <rect x="66" y="14" width="184" height="14" rx="7" fill="#22c55e"/>
+      <rect x="66" y="34" width="220" height="8" rx="4" fill="#000" fill-opacity="0.6"/>
+      <rect x="66" y="34" width="120" height="8" rx="4" fill="#f59e0b"/>
+      <text x="66" y="56" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#cbd5e1">Lv 12</text>
+      <text x="286" y="56" text-anchor="end" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#86efac">2460 / 2900</text>
+    </g>
+    <!-- sağ oyuncu paneli -->
+    <g transform="translate(882 16)">
+      <rect width="300" height="64" rx="14" fill="url(#panel)" stroke="#ffffff" stroke-opacity="0.1"/>
+      <circle cx="266" cy="32" r="22" fill="#ef4444"/>
+      <circle cx="266" cy="26" r="11" fill="#f1c27d"/>
+      <path d="M255 24 q 11 -14 22 0" fill="#7c2d12"/>
+      <rect x="14" y="14" width="220" height="14" rx="7" fill="#000" fill-opacity="0.6"/>
+      <rect x="166" y="14" width="68" height="14" rx="7" fill="#ef4444"/>
+      <rect x="14" y="34" width="220" height="8" rx="4" fill="#000" fill-opacity="0.6"/>
+      <rect x="150" y="34" width="84" height="8" rx="4" fill="#f59e0b"/>
+      <text x="234" y="56" text-anchor="end" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#cbd5e1">Lv 11</text>
+      <text x="14" y="56" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#fca5a5">810 / 2700</text>
+    </g>
+    <!-- rüzgar ve süre -->
+    <g transform="translate(600 16)">
+      <rect x="-120" y="0" width="240" height="64" rx="14" fill="url(#panel)" stroke="#ffffff" stroke-opacity="0.1"/>
+      <g transform="translate(-48 24)" fill="none" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M-40 0 H18"/><path d="M6 -10 L18 0 L6 10"/>
+        <path d="M-40 -12 H-6" opacity="0.5"/><path d="M-40 12 H-6" opacity="0.5"/>
+      </g>
+      <text x="4" y="31" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="20" fill="#ffffff">4.5</text>
+      <rect x="62" y="12" width="44" height="26" rx="8" fill="#fbbf24"/>
+      <text x="84" y="31" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="17" fill="#1f2937">17</text>
+      <text x="0" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="11" fill="#94a3b8">ROUND 6</text>
+    </g>
+
+    <!-- alt bar: itemler, güç, şut -->
+    <g transform="translate(0 486)">
+      <rect x="0" y="0" width="1200" height="74" fill="#0b1220" fill-opacity="0.88"/>
+      <rect x="0" y="0" width="1200" height="1" fill="#ffffff" fill-opacity="0.12"/>
+      <!-- item slotları -->
+      <g transform="translate(24 12)">
+        <g>
+          <rect width="50" height="50" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+          <path d="M12 32 h18 a6 6 0 0 1 6 6 v3 h-28 v-3 a4 4 0 0 1 4 -6z" fill="#f97316"/>
+          <rect x="14" y="34" width="12" height="2" fill="#fff"/>
+          <text x="25" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#fde68a">SPD +8</text>
+        </g>
+        <g transform="translate(62 0)">
+          <rect width="50" height="50" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+          <polygon points="25,15 34,23 30,36 20,36 16,23" fill="#a78bfa"/>
+          <polygon points="25,15 34,23 25,26 16,23" fill="#c4b5fd"/>
+          <text x="25" y="47" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#c4b5fd">PWR +12</text>
+        </g>
+        <g transform="translate(124 0)">
+          <rect width="50" height="50" rx="12" fill="#1e293b" stroke="#22d3ee" stroke-width="2"/>
+          <circle cx="25" cy="25" r="10" fill="none" stroke="#fde68a" stroke-width="4"/>
+          <circle cx="25" cy="14" r="4" fill="#22d3ee"/>
+          <text x="25" y="47" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#67e8f9">DEF +6</text>
+        </g>
+        <g transform="translate(186 0)">
+          <rect width="50" height="50" rx="12" fill="#1e293b" stroke="#ffffff" stroke-opacity="0.15" stroke-width="2"/>
+          <text x="25" y="31" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="20" fill="#475569">+</text>
+        </g>
+      </g>
+      <!-- güç barı -->
+      <g transform="translate(340 20)">
+        <rect width="520" height="34" rx="17" fill="#000" fill-opacity="0.6" stroke="#ffffff" stroke-opacity="0.12"/>
+        <rect width="360" height="34" rx="17" fill="url(#gold)">
+          <animate attributeName="width" values="40;470;40" dur="2.2s" repeatCount="indefinite"/>
+        </rect>
+        <g stroke="#0b1220" stroke-opacity="0.35" stroke-width="2">
+          <path d="M104 4 V30"/><path d="M208 4 V30"/><path d="M312 4 V30"/><path d="M416 4 V30"/>
+        </g>
+      </g>
+      <!-- hareket -->
+      <g transform="translate(896 14)" fill="#1e293b" stroke="#ffffff" stroke-opacity="0.15" stroke-width="2">
+        <rect width="46" height="46" rx="12"/><rect x="54" width="46" height="46" rx="12"/>
+      </g>
+      <g fill="none" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M925 27 L913 37 L925 47"/><path d="M967 27 L979 37 L967 47"/>
+      </g>
+      <!-- şut butonu -->
+      <g transform="translate(1116 37)">
+        <circle r="30" fill="#16a34a" stroke="#86efac" stroke-width="3"/>
+        <circle r="12" fill="#f8fafc"/>
+        <polygon points="0,-6 5,-2 3,4 -3,4 -5,-2" fill="#0b1220"/>
+        <circle r="30" fill="none" stroke="#86efac" stroke-width="3">
+          <animate attributeName="r" values="30;40" dur="1.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.8;0" dur="1.4s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+
+    <rect width="1200" height="560" rx="28" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2"/>
   </g>
 </svg>
