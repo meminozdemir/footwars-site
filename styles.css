@@ -123,6 +123,14 @@ body {
   line-height: 1.55;
 }
 
+.shot {
+  margin: 18px 0 0; width: min(100%, 980px);
+  border-radius: 28px; overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  background: #0b1220;
+}
+.shot img { display: block; width: 100%; height: auto; }
+
 .features {
   list-style: none; padding: 0; margin: 22px 0 0;
   display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -152,6 +160,12 @@ body {
   padding: 18px 16px 26px; color: var(--muted); font-size: 13px;
 }
 .dot { opacity: 0.5; }
+.maker {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: var(--text); text-decoration: none; font-weight: 500;
+}
+.maker img { width: 20px; height: 20px; border-radius: 5px; }
+.maker:hover { color: var(--accent); }
 
 /* uçan top */
 .ball {

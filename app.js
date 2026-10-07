@@ -6,9 +6,9 @@
       "meta.title": "FootWars – Çok Yakında",
       "meta.description": "FootWars: sıra tabanlı 2D futbol topçu savaşı. Açı, güç, rüzgar. Sahayı parçala, rakibin kalesine gol at. Android, iOS ve Web'de çok yakında.",
       "lang.label": "Dil",
-      "hero.eyebrow": "Sıra tabanlı futbol topçu savaşı",
+      "hero.eyebrow": "Nişan al, patlat, gol at!",
       "hero.soon": "Çok yakında",
-      "hero.lead": "Nişan al. Gücü doldur. Fırlat. Rüzgarı oku, sahayı parçala ve rakibin kalesine gol at – ya da onu haritadan düşür.",
+      "hero.lead": "Rüzgarı oku, mükemmel açıyı bul, sahayı sars ve rakibin kalesine gol at. Her tur yeni bir heyecan!",
       "features.aim.title": "Açı ve güç",
       "features.aim.text": "Klasik topçu kontrolleri. Her atış senin hesabın.",
       "features.terrain.title": "Yıkılabilir saha",
@@ -21,15 +21,16 @@
       "platforms.ios": "iOS",
       "platforms.web": "Web tarayıcı",
       "platforms.free": "Ücretsiz",
-      "footer.rights": "Tüm hakları saklıdır."
+      "footer.rights": "Tüm hakları saklıdır.",
+      "footer.maker": "Bir GokTwins Tech ürünüdür"
     },
     en: {
       "meta.title": "FootWars – Coming Soon",
       "meta.description": "FootWars: turn-based 2D football artillery battles. Aim, power, wind. Destroy the pitch, score goals. Coming soon to Android, iOS and Web.",
       "lang.label": "Language",
-      "hero.eyebrow": "Turn-based football artillery",
+      "hero.eyebrow": "Aim, blast, score!",
       "hero.soon": "Coming soon",
-      "hero.lead": "Aim. Charge. Fire. Read the wind, blast the pitch and score against your rival's goal – or knock them off the map.",
+      "hero.lead": "Read the wind, find the perfect angle, shake the pitch and score on your rival's goal. Every turn is a new thrill!",
       "features.aim.title": "Angle & power",
       "features.aim.text": "Classic artillery controls. Every shot is yours to calculate.",
       "features.terrain.title": "Destructible pitch",
@@ -42,15 +43,16 @@
       "platforms.ios": "iOS",
       "platforms.web": "Web browser",
       "platforms.free": "Free to play",
-      "footer.rights": "All rights reserved."
+      "footer.rights": "All rights reserved.",
+      "footer.maker": "A GokTwins Tech product"
     },
     de: {
       "meta.title": "FootWars – Demnächst",
       "meta.description": "FootWars: rundenbasierte 2D-Fußball-Artillerieschlachten. Winkel, Kraft, Wind. Zerstöre das Spielfeld, schieße Tore. Demnächst für Android, iOS und Web.",
       "lang.label": "Sprache",
-      "hero.eyebrow": "Rundenbasierte Fußball-Artillerie",
+      "hero.eyebrow": "Zielen, schießen, Tor!",
       "hero.soon": "Demnächst",
-      "hero.lead": "Zielen. Aufladen. Schießen. Lies den Wind, sprenge den Rasen und triff das gegnerische Tor – oder kick den Gegner von der Karte.",
+      "hero.lead": "Lies den Wind, finde den perfekten Winkel, lass den Rasen beben und triff ins gegnerische Tor. Jede Runde ein neuer Nervenkitzel!",
       "features.aim.title": "Winkel & Kraft",
       "features.aim.text": "Klassische Artilleriesteuerung. Jeder Schuss ist deine Rechnung.",
       "features.terrain.title": "Zerstörbares Spielfeld",
@@ -63,15 +65,16 @@
       "platforms.ios": "iOS",
       "platforms.web": "Webbrowser",
       "platforms.free": "Kostenlos spielbar",
-      "footer.rights": "Alle Rechte vorbehalten."
+      "footer.rights": "Alle Rechte vorbehalten.",
+      "footer.maker": "Ein Produkt von GokTwins Tech"
     },
     es: {
       "meta.title": "FootWars – Muy pronto",
       "meta.description": "FootWars: batallas de artillería futbolística 2D por turnos. Ángulo, potencia, viento. Destruye el campo, marca goles. Muy pronto en Android, iOS y Web.",
       "lang.label": "Idioma",
-      "hero.eyebrow": "Artillería futbolística por turnos",
+      "hero.eyebrow": "¡Apunta, dispara, gol!",
       "hero.soon": "Muy pronto",
-      "hero.lead": "Apunta. Carga. Dispara. Lee el viento, destroza el césped y marca en la portería rival, o sácalo del mapa.",
+      "hero.lead": "Lee el viento, encuentra el ángulo perfecto, sacude el campo y marca en la portería rival. ¡Cada turno es una nueva emoción!",
       "features.aim.title": "Ángulo y potencia",
       "features.aim.text": "Controles clásicos de artillería. Cada tiro es tu cálculo.",
       "features.terrain.title": "Campo destructible",
@@ -84,15 +87,16 @@
       "platforms.ios": "iOS",
       "platforms.web": "Navegador web",
       "platforms.free": "Gratis",
-      "footer.rights": "Todos los derechos reservados."
+      "footer.rights": "Todos los derechos reservados.",
+      "footer.maker": "Un producto de GokTwins Tech"
     },
     pt: {
       "meta.title": "FootWars – Em breve",
       "meta.description": "FootWars: batalhas de artilharia de futebol 2D por turnos. Ângulo, força, vento. Destrua o campo, marque gols. Em breve para Android, iOS e Web.",
       "lang.label": "Idioma",
-      "hero.eyebrow": "Artilharia de futebol por turnos",
+      "hero.eyebrow": "Mira, chuta, gol!",
       "hero.soon": "Em breve",
-      "hero.lead": "Mire. Carregue. Chute. Leia o vento, exploda o gramado e marque no gol do rival – ou derrube-o do mapa.",
+      "hero.lead": "Leia o vento, encontre o ângulo perfeito, sacuda o gramado e marque no gol do rival. Cada turno é uma nova emoção!",
       "features.aim.title": "Ângulo e força",
       "features.aim.text": "Controles clássicos de artilharia. Cada chute é o seu cálculo.",
       "features.terrain.title": "Campo destrutível",
@@ -105,15 +109,16 @@
       "platforms.ios": "iOS",
       "platforms.web": "Navegador web",
       "platforms.free": "Grátis para jogar",
-      "footer.rights": "Todos os direitos reservados."
+      "footer.rights": "Todos os direitos reservados.",
+      "footer.maker": "Um produto GokTwins Tech"
     },
     fr: {
       "meta.title": "FootWars – Bientôt disponible",
       "meta.description": "FootWars : batailles d'artillerie football 2D au tour par tour. Angle, puissance, vent. Détruisez le terrain, marquez des buts. Bientôt sur Android, iOS et Web.",
       "lang.label": "Langue",
-      "hero.eyebrow": "Artillerie football au tour par tour",
+      "hero.eyebrow": "Vise, tire, but !",
       "hero.soon": "Bientôt disponible",
-      "hero.lead": "Visez. Chargez. Tirez. Lisez le vent, faites exploser la pelouse et marquez dans le but adverse – ou éjectez votre rival de la carte.",
+      "hero.lead": "Lisez le vent, trouvez l'angle parfait, faites trembler la pelouse et marquez dans le but adverse. Chaque tour est une nouvelle aventure !",
       "features.aim.title": "Angle et puissance",
       "features.aim.text": "Commandes d'artillerie classiques. Chaque tir est votre calcul.",
       "features.terrain.title": "Terrain destructible",
@@ -126,15 +131,16 @@
       "platforms.ios": "iOS",
       "platforms.web": "Navigateur web",
       "platforms.free": "Gratuit",
-      "footer.rights": "Tous droits réservés."
+      "footer.rights": "Tous droits réservés.",
+      "footer.maker": "Un produit GokTwins Tech"
     },
     ru: {
       "meta.title": "FootWars – Скоро",
       "meta.description": "FootWars: пошаговые 2D футбольные артиллерийские битвы. Угол, сила, ветер. Разрушай поле, забивай голы. Скоро на Android, iOS и в браузере.",
       "lang.label": "Язык",
-      "hero.eyebrow": "Пошаговая футбольная артиллерия",
+      "hero.eyebrow": "Целься, бей, гол!",
       "hero.soon": "Скоро",
-      "hero.lead": "Прицелься. Зарядись. Бей. Учитывай ветер, взрывай газон и забивай в ворота соперника – или сбрось его с карты.",
+      "hero.lead": "Учитывай ветер, найди идеальный угол, встряхни поле и забей в ворота соперника. Каждый ход – новый азарт!",
       "features.aim.title": "Угол и сила",
       "features.aim.text": "Классическое артиллерийское управление. Каждый удар – твой расчёт.",
       "features.terrain.title": "Разрушаемое поле",
@@ -147,15 +153,16 @@
       "platforms.ios": "iOS",
       "platforms.web": "Браузер",
       "platforms.free": "Бесплатно",
-      "footer.rights": "Все права защищены."
+      "footer.rights": "Все права защищены.",
+      "footer.maker": "Продукт GokTwins Tech"
     },
     id: {
       "meta.title": "FootWars – Segera Hadir",
       "meta.description": "FootWars: pertempuran artileri sepak bola 2D berbasis giliran. Sudut, tenaga, angin. Hancurkan lapangan, cetak gol. Segera hadir di Android, iOS, dan Web.",
       "lang.label": "Bahasa",
-      "hero.eyebrow": "Artileri sepak bola berbasis giliran",
+      "hero.eyebrow": "Bidik, tembak, gol!",
       "hero.soon": "Segera hadir",
-      "hero.lead": "Bidik. Isi tenaga. Tembak. Baca angin, ledakkan lapangan, dan cetak gol ke gawang lawan – atau jatuhkan dia dari peta.",
+      "hero.lead": "Baca angin, temukan sudut sempurna, guncang lapangan, dan cetak gol ke gawang lawan. Setiap giliran adalah petualangan baru!",
       "features.aim.title": "Sudut & tenaga",
       "features.aim.text": "Kontrol artileri klasik. Setiap tembakan adalah perhitunganmu.",
       "features.terrain.title": "Lapangan bisa hancur",
@@ -168,15 +175,16 @@
       "platforms.ios": "iOS",
       "platforms.web": "Peramban web",
       "platforms.free": "Gratis dimainkan",
-      "footer.rights": "Hak cipta dilindungi."
+      "footer.rights": "Hak cipta dilindungi.",
+      "footer.maker": "Produk GokTwins Tech"
     },
     vi: {
       "meta.title": "FootWars – Sắp ra mắt",
       "meta.description": "FootWars: trận chiến pháo binh bóng đá 2D theo lượt. Góc bắn, lực, gió. Phá hủy sân cỏ, ghi bàn. Sắp ra mắt trên Android, iOS và Web.",
       "lang.label": "Ngôn ngữ",
-      "hero.eyebrow": "Pháo binh bóng đá theo lượt",
+      "hero.eyebrow": "Ngắm, sút, ghi bàn!",
       "hero.soon": "Sắp ra mắt",
-      "hero.lead": "Ngắm. Nạp lực. Bắn. Đọc hướng gió, phá tung mặt sân và ghi bàn vào lưới đối thủ – hoặc hất họ khỏi bản đồ.",
+      "hero.lead": "Đọc hướng gió, tìm góc sút hoàn hảo, làm rung chuyển mặt sân và ghi bàn vào lưới đối thủ. Mỗi lượt là một cuộc phiêu lưu mới!",
       "features.aim.title": "Góc & lực",
       "features.aim.text": "Điều khiển pháo binh cổ điển. Mỗi cú sút là phép tính của bạn.",
       "features.terrain.title": "Sân cỏ phá hủy được",
@@ -189,7 +197,8 @@
       "platforms.ios": "iOS",
       "platforms.web": "Trình duyệt web",
       "platforms.free": "Chơi miễn phí",
-      "footer.rights": "Bảo lưu mọi quyền."
+      "footer.rights": "Bảo lưu mọi quyền.",
+      "footer.maker": "Sản phẩm của GokTwins Tech"
     }
   };
 
