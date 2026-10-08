@@ -7,7 +7,7 @@
   <meta name="description" content="FootWars: sıra tabanlı 2D futbol topçu savaşı. Açı, güç, rüzgar. Sahayı parçala, rakibin kalesine gol at. Android, iOS ve Web'de çok yakında.">
   <meta name="theme-color" content="#0b1220">
   <link rel="icon" href="/favicon.ico" sizes="48x48">
-  <link rel="icon" href="/favicon.svg?v=0917988dd9" type="image/svg+xml">
+  <link rel="icon" href="/favicon.svg?v=e5bd8c7947" type="image/svg+xml">
   <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -225,7 +225,16 @@ filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
 }
 @media (prefers-reduced-motion: reduce) {
 .ball svg, .ball--float, .soon { animation: none; }
-}</style>
+}
+.nf-home {
+margin-top: 10px; display: inline-flex; align-items: center; padding: 12px 24px; border-radius: 999px;
+background: var(--accent); color: var(--bg); font-weight: 700; text-decoration: none;
+box-shadow: 0 10px 30px rgba(251, 191, 36, 0.25); transition: transform .15s, filter .15s;
+}
+.nf-home:hover { transform: translateY(-1px); filter: brightness(1.08); }
+.nf-langs { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 16px; margin-top: 18px; font-size: 14px; }
+.nf-langs a { color: var(--muted); text-decoration: none; }
+.nf-langs a:hover { color: var(--text); }</style>
 </head>
 <body>
   <div class="pitch" aria-hidden="true">
@@ -269,7 +278,7 @@ filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
     <p class="lead">Rüzgarı oku, mükemmel açıyı bul, sahayı sars ve rakibin kalesine gol at. Her tur yeni bir heyecan!</p>
 
     <figure class="shot">
-      <img src="/hero.svg?v=bdc0f0da34" width="1200" height="520" alt="FootWars oynanışı: mavi oyuncu topu tepelerin üzerinden kırmızı oyuncunun kalesine fırlatıyor" fetchpriority="high" decoding="async">
+      <img src="/hero.svg?v=f7e7f04182" width="1200" height="520" alt="FootWars oynanışı: mavi oyuncu topu tepelerin üzerinden kırmızı oyuncunun kalesine fırlatıyor" fetchpriority="high" decoding="async">
     </figure>
 
     <ul class="features">
@@ -320,6 +329,6 @@ filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
     </svg>
   </div>
 
-  <script src="/app.js?v=5665442346" defer></script>
+  <script src="/app.js?v=7e27a47305" defer></script>
 </body>
 </html>
