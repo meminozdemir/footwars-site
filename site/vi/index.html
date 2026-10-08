@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FootWars – Sắp ra mắt</title>
+  <meta name="description" content="FootWars: trận chiến pháo binh bóng đá 2D theo lượt. Góc bắn, lực, gió. Phá hủy sân cỏ, ghi bàn. Sắp ra mắt trên Android, iOS và Web.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg?v=0917988dd9" type="image/svg+xml">
+  <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FootWars – Sắp ra mắt">
+  <meta property="og:description" content="FootWars: trận chiến pháo binh bóng đá 2D theo lượt. Góc bắn, lực, gió. Phá hủy sân cỏ, ghi bàn. Sắp ra mắt trên Android, iOS và Web.">
+  <meta property="og:site_name" content="FootWars">
+  <meta property="og:image" content="https://footwarsgame.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://footwarsgame.com/og.png">
+  <link rel="canonical" href="https://footwarsgame.com/vi">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta property="og:url" content="https://footwarsgame.com/vi">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="id_ID">
+  <meta property="og:image:alt" content="FootWars – Sắp ra mắt">
+  <meta name="twitter:title" content="FootWars – Sắp ra mắt">
+  <meta name="twitter:description" content="FootWars: trận chiến pháo binh bóng đá 2D theo lượt. Góc bắn, lực, gió. Phá hủy sân cỏ, ghi bàn. Sắp ra mắt trên Android, iOS và Web.">
+  <link rel="alternate" hreflang="tr" href="https://footwarsgame.com/tr">
+  <link rel="alternate" hreflang="en" href="https://footwarsgame.com/">
+  <link rel="alternate" hreflang="de" href="https://footwarsgame.com/de">
+  <link rel="alternate" hreflang="es" href="https://footwarsgame.com/es">
+  <link rel="alternate" hreflang="pt" href="https://footwarsgame.com/pt">
+  <link rel="alternate" hreflang="fr" href="https://footwarsgame.com/fr">
+  <link rel="alternate" hreflang="ru" href="https://footwarsgame.com/ru">
+  <link rel="alternate" hreflang="id" href="https://footwarsgame.com/id">
+  <link rel="alternate" hreflang="vi" href="https://footwarsgame.com/vi">
+  <link rel="alternate" hreflang="x-default" href="https://footwarsgame.com/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"VideoGame","@id":"https://footwarsgame.com/#game","name":"FootWars","url":"https://footwarsgame.com/vi","description":"FootWars: trận chiến pháo binh bóng đá 2D theo lượt. Góc bắn, lực, gió. Phá hủy sân cỏ, ghi bàn. Sắp ra mắt trên Android, iOS và Web.","image":"https://footwarsgame.com/og.png","inLanguage":"vi","genre":["Artillery","Sports"],"gamePlatform":["Android","iOS","Web browser"],"applicationCategory":"GameApplication","operatingSystem":"Android, iOS, Web","playMode":["MultiPlayer","SinglePlayer"],"publisher":{"@id":"https://goktwins.com/#organization"}},{"@type":"WebSite","@id":"https://footwarsgame.com/#website","url":"https://footwarsgame.com","name":"FootWars","inLanguage":["tr","en","de","es","pt","fr","ru","id","vi"],"publisher":{"@id":"https://goktwins.com/#organization"}},{"@type":"Organization","@id":"https://goktwins.com/#organization","name":"GokTwins Tech","url":"https://goktwins.com","logo":"https://goktwins.com/img/logo-512.png"}]}</script>
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/russo-one-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <style>@font-face { font-family: "Inter"; font-style: normal; font-weight: 400 600; font-display: swap; src: url(/fonts/inter-cyrillic.woff2) format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400 600; font-display: swap; src: url(/fonts/inter-vietnamese.woff2) format("woff2"); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400 600; font-display: swap; src: url(/fonts/inter-latin-ext.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400 600; font-display: swap; src: url(/fonts/inter-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Russo One"; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/russo-one-cyrillic.woff2) format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Russo One"; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/russo-one-latin-ext.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Russo One"; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/russo-one-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+:root {
+--bg: #0b1220;
+--bg-2: #0f1a2e;
+--pitch: rgba(74, 222, 128, 0.08);
+--line: rgba(255, 255, 255, 0.06);
+--text: #e2e8f0;
+--muted: #94a3b8;
+--accent: #fbbf24;
+--accent-2: #22c55e;
+--chip: rgba(255, 255, 255, 0.06);
+--chip-border: rgba(255, 255, 255, 0.12);
+--radius: 18px;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+margin: 0;
+font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+color: var(--text);
+background:
+radial-gradient(1200px 600px at 50% -10%, #16304f 0%, transparent 60%),
+radial-gradient(900px 500px at 50% 110%, #123524 0%, transparent 60%),
+linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+overflow-x: hidden;
+}
+.sr-only {
+position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.pitch {
+position: fixed; inset: 0; pointer-events: none; z-index: 0;
+background-image:
+repeating-linear-gradient(90deg, var(--pitch) 0 120px, transparent 120px 240px);
+mask-image: linear-gradient(180deg, transparent 0%, #000 30%, #000 70%, transparent 100%);
+}
+.pitch-line--center {
+position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--line);
+}
+.pitch-circle {
+position: absolute; left: 50%; top: 50%; width: 320px; height: 320px;
+border: 2px solid var(--line); border-radius: 50%; transform: translate(-50%, -50%);
+}
+.pitch-box {
+position: absolute; top: 50%; width: 180px; height: 420px; border: 2px solid var(--line);
+transform: translateY(-50%);
+}
+.pitch-box--left { left: -2px; border-left: 0; }
+.pitch-box--right { right: -2px; border-right: 0; }
+.top, .hero, .foot { position: relative; z-index: 1; }
+.top {
+display: flex; align-items: center; justify-content: space-between;
+padding: 20px clamp(16px, 4vw, 48px);
+}
+.brand {
+display: inline-flex; align-items: center; gap: 10px;
+color: var(--text); text-decoration: none; font-family: "Russo One", sans-serif;
+font-size: 22px; letter-spacing: 0.5px;
+}
+.brand-ball { width: 28px; height: 28px; }
+.lang select {
+appearance: none;
+background: var(--chip) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%2394a3b8' stroke-width='2' fill='none' stroke-linecap='round'/></svg>") no-repeat right 12px center;
+border: 1px solid var(--chip-border);
+color: var(--text);
+padding: 10px 36px 10px 14px;
+border-radius: 999px;
+font: inherit; font-size: 14px;
+cursor: pointer;
+}
+.lang select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.hero {
+flex: 1;
+display: flex; flex-direction: column; align-items: center; justify-content: center;
+text-align: center;
+padding: 24px clamp(16px, 4vw, 48px) 48px;
+gap: 18px;
+}
+.eyebrow {
+margin: 0; text-transform: uppercase; letter-spacing: 0.22em; font-size: 12px;
+color: var(--accent-2); font-weight: 600;
+}
+.title {
+margin: 0; font-family: "Russo One", sans-serif; font-weight: 400;
+font-size: clamp(56px, 12vw, 128px); line-height: 0.95; letter-spacing: -0.01em;
+text-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+.title-word--accent {
+color: var(--accent);
+background: linear-gradient(180deg, #fde68a 0%, #f59e0b 100%);
+-webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.soon {
+margin: 4px 0 0; display: inline-block;
+padding: 8px 18px; border-radius: 999px;
+border: 1px solid rgba(251, 191, 36, 0.4); color: var(--accent);
+font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 13px;
+background: rgba(251, 191, 36, 0.08);
+animation: pulse 2.4s ease-in-out infinite;
+}
+@keyframes pulse {
+0%, 100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.25); }
+50% { box-shadow: 0 0 0 10px rgba(251, 191, 36, 0); }
+}
+.lead {
+margin: 6px 0 0; max-width: 640px; color: var(--muted); font-size: clamp(16px, 2.2vw, 19px);
+line-height: 1.55;
+}
+.shot {
+margin: 18px 0 0; width: min(100%, 980px);
+border-radius: 28px; overflow: hidden;
+box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08);
+background: #0b1220;
+}
+.shot img { display: block; width: 100%; height: auto; }
+.features {
+list-style: none; padding: 0; margin: 22px 0 0;
+display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 14px; width: min(100%, 980px);
+}
+.features li {
+display: flex; flex-direction: column; gap: 6px; text-align: left;
+padding: 18px; border-radius: var(--radius);
+background: var(--chip); border: 1px solid var(--chip-border);
+backdrop-filter: blur(6px);
+}
+.features li strong { font-size: 16px; }
+.features li span:last-child { color: var(--muted); font-size: 14px; line-height: 1.45; }
+.feature-icon { font-size: 24px; line-height: 1; }
+.platforms {
+display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 18px;
+}
+.chip {
+padding: 8px 14px; border-radius: 999px; font-size: 14px; font-weight: 500;
+background: var(--chip); border: 1px solid var(--chip-border); color: var(--text);
+}
+.chip--free { border-color: rgba(34, 197, 94, 0.5); color: #86efac; background: rgba(34, 197, 94, 0.1); }
+.foot {
+display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center;
+padding: 18px 16px 26px; color: var(--muted); font-size: 13px;
+}
+.dot { opacity: 0.5; }
+.maker {
+display: inline-flex; align-items: center; gap: 8px;
+color: var(--text); text-decoration: none; font-weight: 500;
+}
+.maker img { width: 20px; height: 20px; border-radius: 5px; }
+.maker:hover { color: var(--accent); }
+.ball {
+position: fixed; z-index: 0; pointer-events: none;
+width: clamp(80px, 12vw, 160px); height: clamp(80px, 12vw, 160px);
+right: 6vw; bottom: 10vh; opacity: 0.9;
+filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+}
+.ball svg { width: 100%; height: 100%; animation: spin 9s linear infinite; }
+.ball--float { animation: float 5s ease-in-out infinite; }
+@keyframes float {
+0%, 100% { transform: translateY(0) rotate(0deg); }
+50% { transform: translateY(-28px) rotate(6deg); }
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 640px) {
+.ball { right: -20px; bottom: 90px; opacity: 0.35; }
+.pitch-circle { width: 220px; height: 220px; }
+.pitch-box { width: 110px; height: 280px; }
+}
+@media (prefers-reduced-motion: reduce) {
+.ball svg, .ball--float, .soon { animation: none; }
+}</style>
+</head>
+<body>
+  <div class="pitch" aria-hidden="true">
+    <div class="pitch-line pitch-line--center"></div>
+    <div class="pitch-circle"></div>
+    <div class="pitch-box pitch-box--left"></div>
+    <div class="pitch-box pitch-box--right"></div>
+  </div>
+
+  <header class="top">
+    <a class="brand" href="/vi">
+      <svg class="brand-ball" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#f8fafc"/>
+        <polygon points="32,14 46,24 41,41 23,41 18,24" fill="#0b1220"/>
+        <path d="M32 14 L32 4 M46 24 L56 20 M41 41 L47 52 M23 41 L17 52 M18 24 L8 20" stroke="#0b1220" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span>FootWars</span>
+    </a>
+    <label class="lang">
+      <span class="sr-only">Ngôn ngữ</span>
+      <select id="lang" autocomplete="off">
+        <option value="tr" data-path="/tr">Türkçe</option>
+        <option value="en" data-path="/">English</option>
+        <option value="de" data-path="/de">Deutsch</option>
+        <option value="es" data-path="/es">Español</option>
+        <option value="pt" data-path="/pt">Português</option>
+        <option value="fr" data-path="/fr">Français</option>
+        <option value="ru" data-path="/ru">Русский</option>
+        <option value="id" data-path="/id">Bahasa Indonesia</option>
+        <option value="vi" data-path="/vi" selected>Tiếng Việt</option>
+      </select>
+    </label>
+  </header>
+
+  <main class="hero">
+    <p class="eyebrow">Ngắm, sút, ghi bàn!</p>
+    <h1 class="title">
+      <span class="title-word">Foot</span><span class="title-word title-word--accent">Wars</span>
+    </h1>
+    <p class="soon">Sắp ra mắt</p>
+    <p class="lead">Đọc hướng gió, tìm góc sút hoàn hảo, làm rung chuyển mặt sân và ghi bàn vào lưới đối thủ. Mỗi lượt là một cuộc phiêu lưu mới!</p>
+
+    <figure class="shot">
+      <img src="/hero.svg?v=bdc0f0da34" width="1200" height="520" alt="Lối chơi FootWars: cầu thủ xanh sút bóng qua những ngọn đồi về phía khung thành của cầu thủ đỏ" fetchpriority="high" decoding="async">
+    </figure>
+
+    <ul class="features">
+      <li>
+        <span class="feature-icon">🎯</span>
+        <strong>Góc &amp; lực</strong>
+        <span>Điều khiển pháo binh cổ điển. Mỗi cú sút là phép tính của bạn.</span>
+      </li>
+      <li>
+        <span class="feature-icon">💥</span>
+        <strong>Sân cỏ phá hủy được</strong>
+        <span>Mỗi cú sút tạo một hố. Hết đất đứng? Bạn rơi.</span>
+      </li>
+      <li>
+        <span class="feature-icon">🥅</span>
+        <strong>Hai cách chiến thắng</strong>
+        <span>Hạ hết HP đối thủ hoặc ghi ba bàn. Mỗi lượt là lựa chọn của bạn.</span>
+      </li>
+      <li>
+        <span class="feature-icon">⚔️</span>
+        <strong>PvP &amp; PvE</strong>
+        <span>Đấu với người chơi thật hoặc lên cấp cùng bot. Mở khóa gió, kỹ năng và nhiều hơn nữa.</span>
+      </li>
+    </ul>
+
+    <div class="platforms" aria-label="Platforms">
+      <span class="chip">Android</span>
+      <span class="chip">iOS</span>
+      <span class="chip">Trình duyệt web</span>
+      <span class="chip chip--free">Chơi miễn phí</span>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <span>© <span id="year">2026</span> FootWars. <span>Bảo lưu mọi quyền.</span></span>
+    <span class="dot">•</span>
+    <a class="maker" href="https://goktwins.com" target="_blank" rel="noopener">
+      <img src="/goktwins.svg?v=ef22f04859" alt="" width="20" height="20" loading="lazy" decoding="async">
+      <span>Sản phẩm của GokTwins Tech</span>
+    </a>
+  </footer>
+
+  <div class="ball ball--float" aria-hidden="true">
+    <svg viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="30" fill="#f8fafc"/>
+      <polygon points="32,14 46,24 41,41 23,41 18,24" fill="#0b1220"/>
+      <path d="M32 14 L32 4 M46 24 L56 20 M41 41 L47 52 M23 41 L17 52 M18 24 L8 20" stroke="#0b1220" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+
+  <script src="/app.js?v=5665442346" defer></script>
+</body>
+</html>
