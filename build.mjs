@@ -41,7 +41,7 @@ const LANGS = {
 const PRELOAD_FONTS = ["/fonts/inter-latin.woff2", "/fonts/russo-one-latin.woff2"];
 // Google Analytics 4 ölçüm kimliği (G-…). Boşken çerez bildirimi ve Analytics sayfalara eklenmez.
 // Analytics yalnızca ziyaretçi çerez bildiriminde onay verince yüklenir (site/cerez.js).
-const GA_ID = "";
+const GA_ID = "G-3J04JQ1BGQ";
 // GEÇİCİ: true iken gtag.js onay beklenmeden yüklenir (Google etiket testi için; izinler yine "denied"
 // başlar, onaysız çerez yazılmaz). Etiket doğrulanınca false yapılıp yeniden derlenmeli.
 const GA_TEST_MODE = true;
