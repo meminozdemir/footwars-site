@@ -44,7 +44,7 @@ const PRELOAD_FONTS = ["/fonts/inter-latin.woff2", "/fonts/russo-one-latin.woff2
 const GA_ID = "G-3J04JQ1BGQ";
 // GEÇİCİ: true iken gtag.js onay beklenmeden yüklenir (Google etiket testi için; izinler yine "denied"
 // başlar, onaysız çerez yazılmaz). Etiket doğrulanınca false yapılıp yeniden derlenmeli.
-const GA_TEST_MODE = true;
+const GA_TEST_MODE = false;
 // "Çerez tercihleri" bağlantısının alt bilgideki yeri: [aranan, yerine konan].
 const FOOTER_SETTINGS = (button) => ["\n  </footer>", `\n    <span class="dot">•</span>\n    ${button}\n  </footer>`];
 const PUBLISHER = { "@type": "Organization", "@id": "https://goktwins.com/#organization", name: "GokTwins Tech", url: "https://goktwins.com", logo: "https://goktwins.com/img/logo-512.png" };
