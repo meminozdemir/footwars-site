@@ -42,6 +42,9 @@ const PRELOAD_FONTS = ["/fonts/inter-latin.woff2", "/fonts/russo-one-latin.woff2
 // Google Analytics 4 ölçüm kimliği (G-…). Boşken çerez bildirimi ve Analytics sayfalara eklenmez.
 // Analytics yalnızca ziyaretçi çerez bildiriminde onay verince yüklenir (site/cerez.js).
 const GA_ID = "";
+// GEÇİCİ: true iken gtag.js onay beklenmeden yüklenir (Google etiket testi için; izinler yine "denied"
+// başlar, onaysız çerez yazılmaz). Etiket doğrulanınca false yapılıp yeniden derlenmeli.
+const GA_TEST_MODE = true;
 // "Çerez tercihleri" bağlantısının alt bilgideki yeri: [aranan, yerine konan].
 const FOOTER_SETTINGS = (button) => ["\n  </footer>", `\n    <span class="dot">•</span>\n    ${button}\n  </footer>`];
 const PUBLISHER = { "@type": "Organization", "@id": "https://goktwins.com/#organization", name: "GokTwins Tech", url: "https://goktwins.com", logo: "https://goktwins.com/img/logo-512.png" };
@@ -127,7 +130,7 @@ function page(lang, opts = {}) {
     const c = CONSENT[lang] ?? CONSENT.en;
     const [anchor, replacement] = FOOTER_SETTINGS(`<button type="button" class="foot-link" data-consent-open>${esc(c.settings)}</button>`);
     html = html.replace(anchor, replacement);
-    const banner = `  <div class="consent" id="cerez" role="region" aria-label="${attr(c.label)}" data-ga="${GA_ID}" hidden>
+    const banner = `  <div class="consent" id="cerez" role="region" aria-label="${attr(c.label)}" data-ga="${GA_ID}"${GA_TEST_MODE ? " data-always" : ""} hidden>
     <p>${c.text.replace("{privacy}", c.privacy)}</p>
     <div class="consent-actions">
       <button class="consent-btn" type="button" data-consent="denied">${esc(c.reject)}</button>
